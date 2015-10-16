@@ -1,0 +1,25 @@
+<ion-view view-title="{{content.viewtitle}}">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="calendar in content.calendars" type="item-text-wrap" href="#/tab/calendar/{{calendar.id}}">
+        <h2 class="positive">
+          <strong>
+            {{calendar.name}}
+          </strong>
+        </h2>
+
+        <p ng-hide="{{calendar.keynoter == null}}">
+          {{calendar.keynoter.name}} - {{calendar.keynoter.company}}
+        </p>
+
+        <p>
+          <h2 class="assertive">
+            {{calendar.hour}}
+
+            <i class="icon ion-chevron-right icon-accessory"></i>
+          </h2>
+        </p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

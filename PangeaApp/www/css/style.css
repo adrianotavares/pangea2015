@@ -1,0 +1,26 @@
+/* IDS */
+#enter-form{
+border: none;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+/* CLASSES */
+.ta-center{
+text-align: center;
+}
+
+.ta-justify{
+text-align: justify;
+}
+
+.bc-positive{
+background-color: #0c63ee;
+}
+
+.bc-calm{
+background-color: #0a9ec7;
+}

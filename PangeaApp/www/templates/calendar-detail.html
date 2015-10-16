@@ -1,0 +1,29 @@
+<ion-view view-title="{{calendar.name}}">
+  <ion-content class="padding ta-center">
+    <h2 class="positive">
+      <strong>
+        {{calendar.name}}
+      </strong>
+    </h2>
+
+    <p>
+      {{calendar.description}}
+    </p>
+
+    <p>
+      <h2 class="assertive">
+        {{calendar.hour}}
+      </h2>
+    </p>
+
+    <div ng-hide="{{calendar.keynoter == null}}">
+      <h2>
+        {{calendar.keynoter.name}}
+      </h2>
+
+      <p>
+        {{calendar.keynoter.position}} - {{calendar.keynoter.company}}
+      </p>
+    </div>
+  </ion-content>
+</ion-view>
